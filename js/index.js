@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
-        slidesPerView: 7,
+        slidesPerView: 6,
         // spaceBetween: 10,
         // If we need pagination
         pagination: {
