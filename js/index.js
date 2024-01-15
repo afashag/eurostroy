@@ -4,8 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 6,
-        // spaceBetween: 10,
-        // If we need pagination
+        autoplay: {
+          delay: 3000,
+          
+        },
+        speed: 900,
         pagination: {
           el: '.swiper-pagination',
         },

@@ -1,0 +1,125 @@
+.footer {
+    background-color:#020A0C ;
+    padding-top: 40px;
+}
+
+.footer__title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.footer-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__left {
+}
+.footer__left-phone {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer__left-mail {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.footer__left-adress {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footer__logo {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.footer-soc{
+    display: flex;
+    align-items: center;
+}
+.footer-soc__item {
+    background-color: #fff;
+    border-radius: 100px;
+    padding: 8px;
+    
+    margin-right: 10px;
+}
+.footer-soc__item:last-child{
+    margin-right: 0px;
+}
+.footer-soc__img {
+    width: 22px;
+}
+.footer__right {
+}
+.footer__rigth-name {
+    border-bottom: 1px solod white;
+    width: 400px;
+}
+.footer__right-phone {
+    display: block;
+    margin-top: 20px;
+    width: 400px;
+    margin-bottom: 30px;
+}
+.footer__btn-write {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 40px;
+    border: 1px solid #000;
+    background: #FFF;
+    color: #020A0C;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* 140% */
+    text-transform: uppercase;
+}
+.footer__callBack{
+    display: block;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
