@@ -260,24 +260,25 @@
 /* ---------------------CATALOG-------------------------- */
 
 .catalog {
-    padding-top: 50px;
+    padding-top: 20px;
+    background-color: #020A0C;
 }
 
 .catalog__title{
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: Roboto;
-    font-size: 60px;
+    font-size: 34px;
     font-style: normal;
     font-weight: 700;
     line-height: 72px; /* 120% */
     text-transform: uppercase;
 }
 .catalog__text{
-    color: #000;
+    color: #fff;
     text-align: center;
     font-family: Roboto;
-    font-size: 51px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: 72px; /* 141.176% */
@@ -310,8 +311,8 @@
     transition: transform 0.5s;
 }
 .catalog-card__text {
-    margin-top: 20px;
-    color: #000;
+    margin-top: 30px;
+    color: #fff;
     font-family: Roboto;
     font-size: 22px;
     font-style: normal;
@@ -339,4 +340,69 @@
     padding-top: 1000px;
 }
 .works__big-text {
+}
+/* --------MAP--------------- */
+.map-karta{
+    border-radius: 20px;
+    background-color: #020A0C;
+    padding: 6px;
+}
+.map{
+    padding-bottom: 40px;
+    
+}
+.map-title{
+    color: #020A0C;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 120% */
+    text-transform: uppercase;
+}
+/* --------------CALC-------------- */
+.calc {
+}
+.calc-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calc__left {
+}
+.calc__left-img {
+    width: 300px;
+}
+.calc__left-width {
+    background-color: #020A0C;
+}
+.calc__left-height {
+    background-color: #020A0C;
+}
+.calc__right {
+}
+.calc__right-title {
+    font-size: 32px;
+}
+.calc__right-color {
+    font-size: 32px;
+}
+.calc__right-cveta {
+    display: none;
+}
+.calc__right-cveta-active{
+    display: block;
+}
+.calc__right-white {
+    display: block;
+}
+.calc__right-brown {
+    display: block;
+}
+.calc__right-antra {
+    display: block;
+}
+.calc__right-point {
+display: block;
 }

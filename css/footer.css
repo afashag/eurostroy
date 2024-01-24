@@ -1,8 +1,13 @@
 .footer {
     background-color:#020A0C ;
-    padding-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
+.container-footer{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .footer__title {
     color: #fff;
     font-family: Roboto;
@@ -12,7 +17,7 @@
     line-height: 20px; /* 111.111% */
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-align: center;
 }
 .footer-row {
@@ -53,7 +58,7 @@
     line-height: 20px; /* 111.111% */
     letter-spacing: 1px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .footer__logo {
     color: #fff;
@@ -87,25 +92,40 @@
 }
 .footer__rigth-name {
     border-bottom: 1px solod white;
-    width: 400px;
+    width: 290px;
+    height: 30px;
+    border-radius: 20px;
+    font-family: Roboto;
+    font-size: 20px;
+    padding-left: 10px;
 }
+
 .footer__right-phone {
     display: block;
     margin-top: 20px;
-    width: 400px;
+    width: 290px;
+    height: 30px;
+    border-radius: 20px;
     margin-bottom: 30px;
+    font-family: Roboto;
+    font-size: 20px;
+    padding-left: 10px;
 }
+
+
+
+
 .footer__btn-write {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
     border-radius: 40px;
     border: 1px solid #000;
     background: #FFF;
     color: #020A0C;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 21px; /* 140% */
