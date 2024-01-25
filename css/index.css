@@ -376,9 +376,11 @@
 }
 .calc__left-width {
     background-color: #020A0C;
+    color: #fff;
 }
 .calc__left-height {
     background-color: #020A0C;
+    color: #fff;
 }
 .calc__right {
 }
@@ -405,4 +407,11 @@
 }
 .calc__right-point {
 display: block;
+
+}
+
+.calc__right-res{
+    color: #000;
+    margin-top: 10px;
+    font-size: 100px;
 }
