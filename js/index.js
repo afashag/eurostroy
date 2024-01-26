@@ -40,47 +40,44 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
       let cvetaType = document.querySelectorAll('input[name="cveta"]') // нахожу инпуты цвета
-      let dost = document.querySelector('input[name="dost"]') // нахожу доставку
-      let ust = document.querySelector('input[name="ust"]') // нахожу установку
+
+
+      let dost = document.querySelector('input[name="dost"]') // нахожу доставку чекбокс
+      let ust = document.querySelector('input[name="ust"]') // нахожу установку чекбокс
+
+      
+
+      function formula(){
+
+        let totalPrice = (+height.value * +width.value)*1000 //рассчет
+        
+          for (const radio of cvetaType){
+
+            if (radio.checked === true){
+              totalPrice = (+height.value * +width.value)* parseInt(radio.value)
+            } // проверка на то какой цвет выбран
+          } 
+
+            if (dost.checked === true){
+              totalPrice = totalPrice + 200
+            } // проверка на доставку
+
+            if (ust.checked === true){
+              totalPrice = totalPrice + 200
+            } // проверка на установку
+            
+          const formatter = new Intl.NumberFormat('ru');
+          res.innerHTML = formatter.format(totalPrice) //форматтер + // внос значения в див рес
+      } 
+
+      // formula() // если нужно чтобы подсчет производился сразу
 
       for (const input of inputs){
         input.addEventListener('input', function (){
           formula()
         })
-      } //цикл, который проверяет произошли ли изменения в инпутах
-
-      function formula(){
-        let totalPrice = (+height.value * +width.value)*1000
         
-
-        for (const radio of cvetaType){
-          if (radio.checked === true){
-            totalPrice = (+height.value * +width.value)* parseInt(radio.value)
-          } // проверка на то какой цвет выбран
-
-          if (dost.checked === true){
-            totalPrice = (+height.value * +width.value)* parseInt(radio.value) + 200
-          } // проверка на доставку
-
-          if (ust.checked === true){
-            totalPrice = (+height.value * +width.value)* parseInt(radio.value) + 200
-          } // проверка на установку
-
-          else {
-            console.log("fksdjaf;laksd");
-          }
-          // сделать так чтобы всегда проверял
-
-          //сделать форматтер
-
-          
-      } // формула расчета цены
-        res.innerHTML = totalPrice
-      
-      }
-
-      // formula() // если нужно чтобы подсчет производился сразу
-
+      } //цикл, который проверяет произошли ли изменения в инпутах
       
 
       const handleClick = () => {
@@ -88,21 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
       } // при клике на див color выпадает меню спиок со всеми цветами
 
       color.addEventListener('click', handleClick) // вешаю событие на див со словом цвет
-
-// ----------------------------------------------------------------------------------------------------
-      let white = document.querySelector('.calc__right-white') // див, где белый
-      let brown = document.querySelector('.calc__right-brown') // див, где корич
-      let antra = document.querySelector('.calc__right-antra') // див, где антра
-
-      // white.addEventListener('click', () => {
-      //   console.log('white');
-      // })
-      // brown.addEventListener('click', () => {
-      //   console.log('brown');
-      // })
-      // antra.addEventListener('click', () => {
-      //   console.log('antra');
-      // })
           
 })
 
