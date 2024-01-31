@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
+  
+
+
     new Swiper('.swiper', {
         // Optional parameters
         direction: 'horizontal',
@@ -36,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
       let color = document.querySelector('.calc__right-color') // див, где слово цвет(нажимаешь на него и выпадает список)
       let cveta = document.querySelector('.calc__right-cveta') // див, где выпадающий список
       
-      
 
 
       let cvetaType = document.querySelectorAll('input[name="cveta"]') // нахожу инпуты цвета
@@ -44,7 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let dost = document.querySelector('input[name="dost"]') // нахожу доставку чекбокс
       let ust = document.querySelector('input[name="ust"]') // нахожу установку чекбокс
-
+      let poperek = document.querySelector('input[name="poperek"]') // нахожу поперек чекбокс
+      let derzhat = document.querySelector('input[name="derzhat"]') // нахожу держатель чекбокс
       
 
       function formula(){
@@ -65,6 +68,13 @@ document.addEventListener('DOMContentLoaded', () => {
             if (ust.checked === true){
               totalPrice = totalPrice + 200
             } // проверка на установку
+
+            if (poperek.checked === true){
+              totalPrice = totalPrice + (width.value*2)*100
+            }
+            if (derzhat.checked === true){
+              totalPrice = totalPrice + 200
+            }
             
           const formatter = new Intl.NumberFormat('ru');
           res.innerHTML = formatter.format(totalPrice) //форматтер + // внос значения в див рес
@@ -80,11 +90,11 @@ document.addEventListener('DOMContentLoaded', () => {
       } //цикл, который проверяет произошли ли изменения в инпутах
       
 
-      const handleClick = () => {
-        cveta.classList.toggle('calc__right-cveta-active')
-      } // при клике на див color выпадает меню спиок со всеми цветами
+      // const handleClick = () => {
+      //   cveta.classList.toggle('calc__right-cveta-active')
+      // } // при клике на див color выпадает меню спиок со всеми цветами
 
-      color.addEventListener('click', handleClick) // вешаю событие на див со словом цвет
+      // color.addEventListener('click', handleClick) // вешаю событие на див со словом цвет
           
 })
 

@@ -35,25 +35,18 @@
                 </div>
             </div>
             <div class="main">
-                <!-- <div class="first">
-                    <div class="first__left">
-                        <img src="images/first/apartment-building-in-the-city.jpg" alt="" class="first__left-img">
-                    </div>
-                    <div class="first__right">
-                        <div class="first__right-title">Окна Eврострой</div>
-                        <div class="first_-right-text">Гарантия отличного результата</div>
-                        <a href="" class="first__right-write">Написать</a>
-                        <a href="" class="first__right-call">Позвонить</a>
-                    </div>
-                </div> -->
                 <div class="first">
-                    <video autoplay muted loop class="first-video">
-                        <source src="video/pexels-binary-ego-19722976 (2160p).mp4" type="video/mp4">
-                      </video>
-                    <div class="first-title">Окна Eврострой</div>
-                    <div class="first-text">Гарантия отличного результата</div>
-                    <a href="" class="first__right-write">Написать</a>
-                    <a href="" class="first__right-call">Позвонить</a>
+                    <div class="container">
+                        <div class="first__body">
+                            <div class="first__body-title">Окна Eврострой</div>
+                            <div class="first__body-text">Гарантия отличного результата</div>
+                            <a href="" class="first__body-write">Написать</a>
+                            <a href="" class="first__body-call">Позвонить</a>
+                        </div>
+                        <video autoplay muted loop preload="auto" class="first__body-video">
+                            <source type="video/mp4" src="video/pexels-binary-ego-19722976 (2160p).mp4">
+                        </video>
+                    </div>
                 </div>
                 <div class="about">
                     <div class="container">
@@ -118,25 +111,27 @@
                   </div>
                   <div class="calc">
                     <div class="container">
+                        <div class="calc__title map-title">Калькулятор</div>
                         <div class="calc-row">
                             <div class="calc__left">
                                 <img src="images/calc/standart-min.png" alt="" class="calc__left-img">
-                                <input class="calc__left-width" type="text">
-                                <input class="calc__left-height" type="text">
                             </div>
                             <div class="calc__right">
-                                <div class="calc__right-title">Выбирите тип:</div>
-                                <div class="calc__right-color">Цвет</div>
+                                <div class="calc__right-parametrs">Параметры маскитной сетки</div>
+                                <input class="calc__right-width" type="text"><span class="calc__right-text">Ширина</span>
+                                <input class="calc__right-height" type="text"><span class="calc__right-text">Высота</span>
+                                <div class="calc__right-title">Выбирите цвет:</div>
+                                
                                 <div class="calc__right-cveta">
-                                    <input value="1000" class="calc__right-point" name="cveta" type="radio"><span>Белый</span>
-                                    <input value="1050" class="calc__right-point" name="cveta" type="radio"><span>Коричневый</span>
-                                    <input value="1100" class="calc__right-point" name="cveta" type="radio"><span>Антрацит</span>
+                                    <input value="1000" name="cveta" type="radio"><span class="calc__right-text">Белый</span>
+                                    <input value="1050" name="cveta" type="radio"><span class="calc__right-text">Коричневый</span>
+                                    <input value="1100" name="cveta" type="radio"><span class="calc__right-text">Антрацит</span>
+            
                                 </div>
-                                    
-                                    <input class="calc__right-point" name="dost" type="checkbox"><span>Доставка</span>
-                                    <input class="calc__right-point" name="ust" type="checkbox"><span>Установка</span>
-                                    <input name="poperek" type="checkbox"><span>Дополнительная поперечина</span>
-                                    <input name="derzhat" type="checkbox"><span>Металические держатели(наружные)</span>
+                                    <input name="dost" type="checkbox"><span class="calc__right-text">Доставка</span>
+                                    <input name="ust" type="checkbox"><span class="calc__right-text">Установка</span>
+                                    <input name="poperek" type="checkbox"><span class="calc__right-text">Дополнительная поперечина</span>
+                                    <input name="derzhat" type="checkbox"><span class="calc__right-text">Металические держатели(наружные)</span>
                                 
                                 
 
@@ -244,24 +239,14 @@
         <div class="footer">
             <div class="container-footer">
                 <div class="footer__title">Контакты</div>
-                <div class="footer-row">
-                    <div class="footer__left">
-                        <div class="footer__left-phone">Телефон: +7 928 717 22 11</div>
-                        <div class="footer__left-mail">Почта: modern-okna@mail.ru</div>
-                        <div class="footer__left-adress">Адрес: Нальчик, ул. Кирова, 316</div>
+                        <div class="footer__phone">Телефон: +7 928 717 22 11</div>
+                        <div class="footer__mail">Почта: modern-okna@mail.ru</div>
+                        <div class="footer__adress">Адрес: Нальчик, ул. Кирова, 316</div>
                         <div class="footer-soc">
                             <a class="footer-soc__item" href=""><img class="footer-soc__img" src="images/header/icons8-телефон-50.png" alt=""></a>
                             <a class="footer-soc__item" href=""><img class="footer-soc__img" src="images/header/icons8-whatsapp-50 (1).png" alt=""></a>
                             <a class="footer-soc__item" href=""><img class="footer-soc__img" src="images/header/icons8-почта-50.png" alt=""></a>
                         </div>
-                    </div>
-                    <div class="footer__right">
-                        <a class="footer__callBack" href="">Заказать обратный звонок</a>
-                        <input placeholder="Ваше имя" class="footer__rigth-name" type="text">
-                        <input placeholder="Ваш номер телефона" class="footer__right-phone" type="text">
-                        <a href="" class="footer__btn-write">Отправить</a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
