@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
       let inputs = document.querySelectorAll('input') //все инпуты
 
-      let width = document.querySelector('.calc__left-width') //ширина 
-      let height = document.querySelector('.calc__left-height') // высота
+      let width = document.querySelector('.calc__right-width') //ширина 
+      let height = document.querySelector('.calc__right-height') // высота
 
       let res = document.querySelector('.calc__right-res') // див, где стоимость
 
