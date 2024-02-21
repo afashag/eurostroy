@@ -1,3 +1,16 @@
-@media (max-width: 980px){
+@media (max-width: 1250px){
+    .header-row {
+        margin-inline: 20px;
+    }
+    .header__menu {
+        display: none;
+    }
 
+    .header-soc{
+        display: none;
+    }  
+        
+    .burger {
+        display: block;
+    }
 }

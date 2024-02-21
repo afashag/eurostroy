@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  const burger = document.querySelector('.burger')
+  const headerMenu = document.querySelector('.header__menu')
+  const headerRow = document.querySelector('.header-row')
+  const headerSoc = document.querySelector('.header-soc')
+  const body = document.querySelector('body')
+  burger.addEventListener('click', () => {
+    headerMenu.classList.toggle('active')
+    headerRow.classList.toggle('active')
+    body.classList.toggle('active')
+    headerSoc.classList.toggle('active')
+  })
+
+
+
+
+
     new Swiper('.swiper', {
 
       

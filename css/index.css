@@ -534,45 +534,67 @@
 }
 
 .burger{
-    display: flex;
-    position: relative;
-    z-index: 50;
+    position: absolute;
+    right: 20px;
+    z-index: 10;
     align-items: center;
-    justify-content: flex-end;
     width: 30px;
-    height: 18px;
-    
-}
-
-.burger span{
     height: 2px;
-    width: 100%;
-    transform: scale(1);
+    display: none;
     background-color: #faf6f2;
+}
+.header {
 
 }
+.burger.active {
+    display: flex;
+}
 
-.burger::before, .burger::after{
+
+.header__menu.active {
+    display: flex;
+    flex-direction: column;
+   
+    gap: 40px;
+    justify-content: start;
+   
+}
+.header-row.active {
+
+    margin-block: 40px;
+    gap: 100px;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.burger::before {
     content: '';
     position: absolute;
     height: 2px;
-    width: 100%;
+    width: 30px;
+    top: 8px;
+    background-color: #faf6f2;
+    transition: all 0.3s ease 0s;
+    
+}
+.burger::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    top: -8px;
     background-color: #faf6f2;
     transition: all 0.3s ease 0s;
     
 }
 
-.burger::before{
-    top: 0;
-}
 
-.burger::after{
-    bottom: 0; 
-}
 
-.burger-active span{
-    transform: scale(0);
-}
+
 
 .burger-active::before{
     top: 50%;
