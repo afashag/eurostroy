@@ -38,6 +38,15 @@
     font-weight: 700;
     line-height: 20px; /* 111.111% */
 }
+.header__menu_link-active {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; /* 111.111% */
+    background-color: rgb(81, 153, 255);
+}
 .header-phone {
     color: #fff;
     font-family: Roboto;
@@ -46,7 +55,7 @@
     font-weight: 700;
     line-height: 20px; /* 111.111% */
     margin-right: 50px;
-    
+    line-height: 27px;
 }
 .header__soc {
     display: flex;

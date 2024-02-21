@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/null.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -18,30 +20,51 @@
 <body>
     <div class="wrapper">
         <div class="content">
+
             <div class="header">
                 <div class="container">
                     <div class="header-row">
-                       <a class="header__logo" href=""> Окна Eврострой</a>
+                       <a class="header__logo" href="">Eврострой-окна</a>
                         <ul class="header__menu">
-                            <li class="header__menu_item"><a class="header__menu_link" href="">О компании</a></li>
-                            <li class="header__menu_item"><a class="header__menu_link" href="">Продукция</a></li>
-                            <li class="header__menu_item"><a class="header__menu_link" href="">Контакты</a></li>
-                            <div class="header-phone">+7 900 000 00 00</div>
-                            <a class="header-soc__item" href=""><img class="header-soc__img" src="images/header/icons8-телефон-50.png" alt=""></a>
-                            <a class="header-soc__item" href=""><img class="header-soc__img" src="images/header/icons8-whatsapp-50 (1).png" alt=""></a>
-                            <a class="header-soc__item" href=""><img class="header-soc__img" src="images/header/icons8-почта-50.png" alt=""></a>
+                            <li class="header__menu_item"><a class="header__menu_link" href="#about">О компании</a></li>
+                            <li class="header__menu_item"><a class="header__menu_link" href="#calc">Калькулятор</a></li>
+                            <li class="header__menu_item"><a class="header__menu_link" href="#contacts">Контакты</a></li>
+                            <a class="header-phone" href="callto:+79287172211">+7-928-712-22-71<br>+7-928-717-22-11</a>
+                            <a class="header-soc__item" href="callto:+79287172211"><img class="header-soc__img" src="images/header/icons8-телефон-50.png" alt=""></a>
+                            <a class="header-soc__item" href="https://api.whatsapp.com/send/?phone=79287172211&text&type=phone_number&app_absent=0"><img class="header-soc__img" src="images/header/icons8-whatsapp-50 (1).png" alt=""></a>
+                            <a class="header-soc__item" href="mailto:evrostroy-okna@mail.ru"><img class="header-soc__img" src="images/header/icons8-почта-50.png" alt=""></a>
                         </ul>
+                        <div class="burger">
+                            <span></span>
+                        </div>
                     </div>
                 </div>
+                <!-- фронтенд кейс 06:00 -->
+                
+
+                <nav class="nav">
+                    <ul>
+                        <li>О компании</li>
+                        <li>Калькулятор</li>
+                        <li>Контакты</li>
+                        <a class="header-phone" href="callto:+79287172211">+7-928-712-22-71<br>+7-928-717-22-11</a>
+                        <a class="header-soc__item" href="callto:+79287172211"><img class="header-soc__img" src="images/header/icons8-телефон-50.png" alt=""></a>
+                        <a class="header-soc__item" href="https://api.whatsapp.com/send/?phone=79287172211&text&type=phone_number&app_absent=0"><img class="header-soc__img" src="images/header/icons8-whatsapp-50 (1).png" alt=""></a>
+                        <a class="header-soc__item" href="mailto:evrostroy-okna@mail.ru"><img class="header-soc__img" src="images/header/icons8-почта-50.png" alt=""></a>
+                    </ul>
+                </nav>
+
+                
+                
             </div>
             <div class="main">
                 <div class="first">
                     <div class="container">
                         <div class="first__body">
-                            <div class="first__body-title">Окна Eврострой</div>
+                            <div class="first__body-title">Eврострой-окна</div>
                             <div class="first__body-text">Гарантия отличного результата</div>
-                            <a href="" class="first__body-write">Написать</a>
-                            <a href="" class="first__body-call">Позвонить</a>
+                            <a href="https://api.whatsapp.com/send/?phone=79287172211&text&type=phone_number&app_absent=0" class="first__body-write">Написать</a>
+                            <a href="callto:+79287172211" class="first__body-call">Позвонить</a>
                         </div>
                         <video autoplay muted loop preload="auto" class="first__body-video">
                             <source type="video/mp4" src="video/pexels-binary-ego-19722976 (2160p).mp4">
@@ -53,7 +76,7 @@
                         <div class="about__row">
                             <div class="about__left"><img class="about__left-img" src="images/about/noroot.png" alt=""></div>
                             <div class="about__right">
-                                <div class="about__right-title">О КОМПАНИИ</div>
+                                <div id="about" class="about__right-title">О КОМПАНИИ</div>
                                 <div class="about__right-text">Компания "Окна Еврострой" производит и устанавливает пластиковые окна и двери с 2015 года.</div>
                                 <div class="about__right-text">Мы располагаем собственной производственной базой<br>с современным оборудованием.</div>
                                 <div class="about__right-text">"Окна Еврострой" использует только высококачественные материалы и комплектующие для окон и дверей.</div>
@@ -109,8 +132,8 @@
                         </div>
                         <div class="swiper-pagination"></div>
                   </div>
-                  <div class="calc">
-                    <div class="container">
+                  <div id="calc" class="calc">
+                    <div class="calc-container">
                         <div class="calc__title map-title">Калькулятор</div>
                         <div class="calc-row">
                             <div class="calc__left">
@@ -229,16 +252,18 @@
             <iframe class="map-karta" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2894.0552835253693!2d43.61729787694089!3d43.50118226224852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x405a0727cb9885d9%3A0x410e632552fae54!2z0YPQuy4g0JrQuNGA0L7QstCwLCAzMTYsINCd0LDQu9GM0YfQuNC6LCDQmtCw0LHQsNGA0LTQuNC90L4t0JHQsNC70LrQsNGA0YHQutCw0Y8g0KDQtdGB0L8uLCAzNjAwMTk!5e0!3m2!1sru!2sru!4v1706114881914!5m2!1sru!2sru" width="1200" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="footer">
+        <div id="contacts" class="footer">
             <div class="container-footer">
                 <div class="footer__title">Контакты</div>
-                        <div class="footer__phone">Телефон: +7 928 717 22 11</div>
-                        <div class="footer__mail">Почта: modern-okna@mail.ru</div>
-                        <div class="footer__adress">Адрес: Нальчик, ул. Кирова, 316</div>
+                        <div class="footer__phone">
+                            +7-928-712-22-71 <br> +7-928-717-22-11
+                        </div>
+                        <div class="footer__mail">evrostroy-okna@mail.ru</div>
+                        <div class="footer__adress">г. Нальчик, ул. Кирова, 316</div>
                         <div class="footer-soc">
-                            <a class="footer-soc__item" href=""><img class="footer-soc__img" src="images/header/icons8-телефон-50.png" alt=""></a>
-                            <a class="footer-soc__item" href=""><img class="footer-soc__img" src="images/header/icons8-whatsapp-50 (1).png" alt=""></a>
-                            <a class="footer-soc__item" href=""><img class="footer-soc__img" src="images/header/icons8-почта-50.png" alt=""></a>
+                            <a class="footer-soc__item" href="callto:+79287172211"><img class="footer-soc__img" src="images/header/icons8-телефон-50.png" alt=""></a>
+                            <a class="footer-soc__item" href="https://api.whatsapp.com/send/?phone=79287172211&text&type=phone_number&app_absent=0"><img class="footer-soc__img" src="images/header/icons8-whatsapp-50 (1).png" alt=""></a>
+                            <a class="footer-soc__item" href="mailto:evrostroy-okna@mail.ru"><img class="footer-soc__img" src="images/header/icons8-почта-50.png" alt=""></a>
                         </div>
             </div>
         </div>

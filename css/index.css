@@ -376,6 +376,10 @@
     padding-top: 20px;
     padding-bottom: 50px;
 }
+.calc-container{
+    margin: 0 auto;
+    max-width: 1000px;
+}
 .calc-row {
     display: flex;
     align-items: center;
@@ -472,7 +476,7 @@
     position: relative;
     top: 33px;
     font-family: Roboto;
-    opacity: 0.5;
+    opacity: 0;
     
 }
 .calc__right-text{
@@ -497,7 +501,7 @@
 }
 .calc__right-text-active{
     display: block;
-    color: #fff;
+    color: black;
     border-radius: 10px;
     width: 350px;
     height: 30px;
@@ -513,5 +517,69 @@
     padding-bottom: 10px;
     margin-bottom: -23px;
     font-size: 16px;
-    background-color: aqua;
+    background-color: rgb(81, 153, 255);
+}
+/* -------------------BURGER--------------------- */
+.nav{
+    display: flex;
+    width: 700px;
+    padding: 0 40px;
+}
+
+.nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger{
+    display: flex;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    
+}
+
+.burger span{
+    height: 2px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #faf6f2;
+
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #faf6f2;
+    transition: all 0.3s ease 0s;
+    
+}
+
+.burger::before{
+    top: 0;
+}
+
+.burger::after{
+    bottom: 0; 
+}
+
+.burger-active span{
+    transform: scale(0);
+}
+
+.burger-active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger-active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
 }

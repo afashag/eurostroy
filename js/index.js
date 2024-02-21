@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     new Swiper('.swiper', {
+
+      
         // Optional parameters
         direction: 'horizontal',
         loop: true,
@@ -24,6 +26,9 @@ document.addEventListener('DOMContentLoaded', () => {
         scrollbar: {
           el: '.swiper-scrollbar',
         },
+
+        
+        
       });
 
 
@@ -117,6 +122,17 @@ document.addEventListener('DOMContentLoaded', () => {
         
       } //цикл, который проверяет произошли ли изменения в инпутах
       
+      $(document).ready(function() {
+        $('.icon-one').click(function() {
+          $('.icon-one').toggleClass('active-one');
+        });
+        $('.icon-two').click(function() {
+          $('.icon-two').toggleClass('active-two');
+        });
+        $('.icon-three').click(function() {
+          $('.icon-three').toggleClass('active-three');
+        });
+      })
 
           
 })
