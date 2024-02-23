@@ -524,6 +524,7 @@
     display: flex;
     width: 700px;
     padding: 0 40px;
+
 }
 
 .nav ul{
@@ -548,26 +549,25 @@
 }
 .burger.active {
     display: flex;
+    
 }
 
 
 .header__menu.active {
     display: flex;
     flex-direction: column;
-   
-    gap: 40px;
+
+    gap: 60px;
     justify-content: start;
-   
+    height: 100vh;
 }
 .header-row.active {
-
-    margin-block: 40px;
-    gap: 100px;
+    margin-block: 10px;
     flex-direction: column;
     align-items: center;   
-    justify-content: start;
-    width: 100vw;
-    height: 100vh;
+    gap: 80px;
+    
+    
 }
 
 
