@@ -38,8 +38,10 @@
 
     }
     .first__body{
-        margin: 0 20px;
-
+        margin-inline: 5px;
+        padding: 20px;
+        position: relative;
+        bottom: 125px;
 
     }
     .first__body-title {
@@ -105,15 +107,18 @@
         margin: 0 20px;
     }
     .about__left-img {
-        width: 380px;
-        height: 400px;
+        max-width: 360px;
+        max-height: 360px;
         border-radius: 10px;
-        transition: transform 0.4s;
+        margin-top: 20px;
     }
     .about__right{
-        margin: 0 20px;
-        width: 380px;
-        height: 400px;
+        background-color: #020A0C;
+        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
     }
     .about__right-title {
         font-size: 20px;
@@ -121,18 +126,175 @@
         font-weight: 700;
         line-height: 72px; /* 120% */
         text-transform: uppercase;
-        
+        margin-bottom: 5px;
         text-align: center;
     }
     .about__right-text {
         font-family: Roboto;
-        font-size: 15px;
+        font-size: 14px;
         font-style: normal;
         letter-spacing: 1px;
         text-transform: uppercase;
-        
+        margin-bottom: 1px;
         text-align: center;
-        width: 340px;   
+        width: 340px;
+        margin-bottom: 20px; 
+    }
+    .calc{
+        padding-top: 0px;
+        padding-bottom: 30px;
+        
     }
 
+    .calc-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    
+    }
+    .calc__left{
+        display: none;
+    }
+    .calc__title{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .catalog__title{
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .catalog__text{
+        font-size: 16px;
+        margin-bottom: 5px;
+        line-height: 70px;
+    }
+    .catalog{
+        display: none;
+    }
+    .window__row{
+        
+        flex-direction: column;
+    }
+    .window__left-title{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 72px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .window__left-text{
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 1px;
+        text-align: center;
+        width: 320px;
+        margin-bottom: 20px;
+    }
+    .window__right-img{
+        max-width: 360px;
+        max-height: 360px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    .map-title{
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
+    .map__block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer__title{
+        font-size: 20px;
+    }
+    .footer__phone{
+        font-size: 16px;
+    }
+    .footer__mail{
+        font-size: 16px;
+    }
+    .footer__adress{
+        font-size: 16px;
+    }
+    .calc__right-width::placeholder {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .calc__right-height::placeholder {
+        text-transform: uppercase;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .window{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 380px){
+    .calc__right{
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        flex-direction: column;
+    }
+    .calc__right-text{
+       width: 250px;
+       padding: 20px 0px;
+       font-size: 12px;
+    }
+    .calc__right-width{
+        width: 250px;
+    }
+    .calc__right-height{
+        width: 250px;
+    }
+    .calc__right-parametrs{
+        font-size: 16px;
+        max-width: 300px;
+    }
+    .calc__right-title{
+        font-size: 16px;
+        max-width: 300px;
+    }
+    .calc__right-res{
+        font-size: 30px;
+        max-width: 300px;
+    }
+    .first__body-text{
+        margin-bottom: 30px;
+    }
+    .window__left-text{
+        width: 320px;
+    }
+    .about__right-text{
+        width: 320px;
+    }
+  
+    .window__right-img{
+        max-width: 300px;
+        max-height: 360px;
+        border-radius: 10px;
+        margin-top: 20px;
+        
+    }
+    .about__left-img {
+        max-width: 300px;
+        max-height: 360px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+    
 }

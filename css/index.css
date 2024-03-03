@@ -384,6 +384,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .calc__left {
 }
@@ -477,6 +478,7 @@
     top: 33px;
     font-family: Roboto;
     opacity: 0;
+    background-color: #FFF;
     
 }
 .calc__right-text{
@@ -501,7 +503,7 @@
 }
 .calc__right-text-active{
     display: block;
-    color: black;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     width: 350px;
     height: 30px;
@@ -517,7 +519,7 @@
     padding-bottom: 10px;
     margin-bottom: -23px;
     font-size: 16px;
-    background-color: rgb(81, 153, 255);
+    background-color: rgb(0, 106, 255);
 }
 /* -------------------BURGER--------------------- */
 .nav{
